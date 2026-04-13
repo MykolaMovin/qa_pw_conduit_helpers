@@ -32,12 +32,12 @@ export class CreateArticlePage {
   }
 
   async fillTagsField(tags) {
-    tags.forEach(async tag => {
+    for (let tag of tags) {
       await test.step(`Fill the '${tag}' tag`, async () => {
         await this.tagsField.fill(tag);
         await this.page.keyboard.press('Enter');
       });
-    });
+    }
   }
 
   async clickPublishArticleButton() {

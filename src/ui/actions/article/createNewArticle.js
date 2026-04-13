@@ -1,7 +1,7 @@
 import { HomePage } from '../../pages/HomePage';
-import { CreateArticlePage } from '../../src/ui/pages/article/CreateArticlePage';
-import { ViewArticlePage } from '../../src/ui/pages/article/ViewArticlePage';
-import { generateNewArticleData } from '../../src/common/testData/generateNewArticleData';
+import { CreateArticlePage } from '../../pages/article/CreateArticlePage';
+import { ViewArticlePage } from '../../pages/article/ViewArticlePage';
+import { generateNewArticleData } from '../../common/testData/generateNewArticleData';
 import { test } from '@playwright/test';
 
 export async function createNewArticle(page) {
